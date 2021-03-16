@@ -1,0 +1,417 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!95 &2068779815
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2436577905581113227}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 02f898432afef5d49a1d6af812311f55, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2068779822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2436577905581113227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca6d86b00ff141a4d99a62b569f1215b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  execute: 0
+--- !u!114 &2068779823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2436577905581113227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eef5729863ba0874c8323e981dd1533f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &2313008664874091952
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 128637990653311492, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: questions.Array.data[0].reward_player
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311492, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: questions.Array.data[1].gotoindexWrongAnswer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311493, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: loopConversation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311493, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: after_execution_loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311494, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.557657
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311494, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.5742567
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311494, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0391711
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311494, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.41128016
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311494, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311494, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[0].reply1
+      value: ok
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[0].reply2
+      value: nop,i gotta run!
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[1].reply2
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[2].reply2
+      value: nop,i gotta run!
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[3].reply2
+      value: ok
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[4].reply2
+      value: ok
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[5].reply1
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[5].reply2
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[3].gold_value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[4].gold_value
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[5].gold_value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[2].gotoQuestion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[3].gotoQuestion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[3].reward_player
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[4].reward_player
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[1].endconversation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[2].endconversation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[5].endconversation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[0].Conversation_text
+      value: Answer 2 questions to get 100 Gold!
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[1].Conversation_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[1].conversationindex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[2].Conversation_text
+      value: Answer 2 questions to get 100 Gold!
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[2].conversationindex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[3].Conversation_text
+      value: wow u got 100 gold!
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[3].booltriggerscript
+      value: 
+      objectReference: {fileID: 2068779822}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[3].changebooltrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[3].conversationindex
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[4].Conversation_text
+      value: wrong answer! :(
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[4].booltriggerscript
+      value: 
+      objectReference: {fileID: 2068779822}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[4].changebooltrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[4].conversationindex
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[5].Conversation_text
+      value: this is just a hack to avoid overcomplicated indexing!
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[5].booltriggerscript
+      value: 
+      objectReference: {fileID: 2068779822}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[5].changebooltrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[5].conversationindex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[0].reply1conversation
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[0].reply2conversation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[1].reply2conversation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[2].reply2conversation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[3].reply1conversation
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[3].reply2conversation
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[4].reply2conversation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311495, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: conversations.Array.data[5].reply1conversation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311544, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e08f63607506ba24b86a84538a6e9896,
+        type: 3}
+    - target: {fileID: 128637990653311545, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311545, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.16469494
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311545, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.16469494
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311545, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.16469494
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311545, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311545, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311545, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311545, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311545, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311545, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311545, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311545, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311545, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311545, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311547, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_Name
+      value: ChestBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990868299170, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 43cf059f82ce7a443a9c5d9f47caa067, type: 3}
+--- !u!1 &2436577905581113227 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 128637990653311547, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+    type: 3}
+  m_PrefabInstance: {fileID: 2313008664874091952}
+  m_PrefabAsset: {fileID: 0}

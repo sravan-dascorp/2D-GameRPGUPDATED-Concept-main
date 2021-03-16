@@ -1,0 +1,11 @@
+
+=== Mon Mar 15 09:25:50 2021
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.ads from version 3.5.2 to 3.6.1
+  com.unity.ext.nunit from version 1.0.5 to 1.0.6
+  com.unity.purchasing from version 2.1.1 to 2.2.1
+  com.unity.xr.legacyinputhelpers from version 2.1.6 to 2.1.7
