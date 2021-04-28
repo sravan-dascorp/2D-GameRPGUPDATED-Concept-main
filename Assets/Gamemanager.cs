@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Gamemanager : MonoBehaviour
 {
@@ -31,52 +32,58 @@ public class Gamemanager : MonoBehaviour
     [Header("Others")]
     public GameObject quit_popup;
 
+
+    public bool not_analytics;
+
     // Start is called before the first frame update
     void Start()
     {
-        analytics_canvas.SetActive(false);
+        if(!not_analytics)analytics_canvas.SetActive(false);
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        analytics_canvas.GetComponent<Animator>().updateMode = AnimatorUpdateMode.UnscaledTime;
-        gametimer += Time.unscaledDeltaTime * 1f;
-        if (intial_time)
-        {if (intial_timein_second > 1f) 
-            { intial_timein_second -= Time.deltaTime * 1; }
-        if(intial_timein_second <= 1f)
+        if (!not_analytics)
+        {
+            analytics_canvas.GetComponent<Animator>().updateMode = AnimatorUpdateMode.UnscaledTime;
+            gametimer += Time.unscaledDeltaTime * 1f;
+            if (intial_time)
+            {
+                if (intial_timein_second > 1f)
+                { intial_timein_second -= Time.deltaTime * 1; }
+                if (intial_timein_second <= 1f)
+                {
+                    timer -= Time.deltaTime * depletion_Per_SECOND;
+                }
+
+
+
+
+            }
+            else if (!intial_time)
             {
                 timer -= Time.deltaTime * depletion_Per_SECOND;
             }
-
-
-           
-
-        }
-        else if (!intial_time)
-        {
-            timer -= Time.deltaTime * depletion_Per_SECOND;
-        }
-        if (Input.GetKeyDown("p"))
-        {
-            for (int i = 0; i < result.Count; i++)
+            if (Input.GetKeyDown("p"))
             {
-                Debug.Log(result[i].Question_no + " : " + result[i].result+ " : " +result[i].time_taken);
+                for (int i = 0; i < result.Count; i++)
+                {
+                    Debug.Log(result[i].Question_no + " : " + result[i].result + " : " + result[i].time_taken);
+                }
             }
+
+
+            if (analytics_canvas.activeSelf)
+            {
+                totalgameTime.text = "Total game time    : " + Mathf.Round(gametimer);
+            }
+
+            if (gold_value != null)
+                gold_value.text = InventorySimple.gold.ToString();
+
         }
-
-
-        if (analytics_canvas.activeSelf)
-        {
-            totalgameTime.text = "Total game time    : " + Mathf.Round(gametimer);
-        }
-
-
-        gold_value.text = InventorySimple.gold.ToString();
-
-
     }
 
     public void activateAnalytics()
@@ -136,6 +143,18 @@ public class Gamemanager : MonoBehaviour
     {
         if (quit_popup.activeSelf) quit_popup.SetActive(false);
         else if (!quit_popup.activeSelf) quit_popup.SetActive(true); }
+
+
+    public void Nextlevel()
+    {
+        Debug.Log("nextlevel clkickjed");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    public void gotolevel(int level_index)
+    {
+        
+        SceneManager.LoadScene(level_index);
+    }
 }
 
 

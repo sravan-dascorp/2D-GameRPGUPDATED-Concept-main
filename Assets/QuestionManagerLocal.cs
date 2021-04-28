@@ -16,9 +16,9 @@ public class QuestionManagerLocal : MonoBehaviour
     Text button1text, button2text, button3text ;
 
     float Timer = 0;
+
+
     bool time_updated;
-
-
 
 
 
@@ -65,14 +65,12 @@ public class QuestionManagerLocal : MonoBehaviour
         if (Questioncanvas.gameObject.activeSelf) { Timer += Time.deltaTime * 1f; }
 
         questiontextbox.text = questions[i].QuestionText;
-        button1button.image.sprite = questions[i].imageoption1;
-        button2button.image.sprite = questions[i].imageoption2;
-        button3button.image.sprite = questions[i].imageoption3;
-
-       
-
-        
-
+        var button1image = button1button.GetComponent<RawImage>();
+        button1image.texture = questions[i].imageoption1;
+        var button2image = button2button.GetComponent<RawImage>();
+        button2image.texture = questions[i].imageoption2;
+        var button3image = button3button.GetComponent<RawImage>();
+           button3image .texture= questions[i].imageoption3;
 
     }
 
@@ -97,7 +95,7 @@ public class QuestionManagerLocal : MonoBehaviour
         Gamemanager.question_no++;
         Gamemanager.result.Add(new results() {Question_no = Gamemanager.question_no,result = "RightAnswer" , time_taken = Mathf.Round(Timer) });
         
-        Debug.Log(Timer);
+       // Debug.Log(Timer);
         time_updated = true;
         if (!questions[i].gotoconversation )
     {
@@ -106,7 +104,7 @@ public class QuestionManagerLocal : MonoBehaviour
                 addReward();
             }
             i =i+1; // if (i+1 <= questions.count) later add this to avoid errors?
-        Debug.Log("right answer");
+      //  Debug.Log("right answer");
     }
     else if (questions[i].gotoconversation )
     {
@@ -136,7 +134,7 @@ public class QuestionManagerLocal : MonoBehaviour
                 addReward();
             }
             i = i + 1; // if (i+1 <= questions.count) later add this to avoid errors?
-            Debug.Log("right answer");
+          //  Debug.Log("right answer");
         }
         else if (questions[i].gotoconversation)
         {
@@ -189,7 +187,7 @@ public class questionclass
     public enum correct_answerenum { option1 = 1,option2 =2,option3 =3}
     public correct_answerenum correct_answer;
 
-    public Sprite imageoption1, imageoption2, imageoption3;
+    public Texture2D imageoption1, imageoption2, imageoption3;
     
 
     public bool gotoconversation;

@@ -400,12 +400,32 @@ PrefabInstance:
     - target: {fileID: 128637990653311547, guid: 43cf059f82ce7a443a9c5d9f47caa067,
         type: 3}
       propertyPath: m_Name
-      value: ChestBox
+      value: ChestBox Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 128637990653311547, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_TagString
+      value: questionbank
       objectReference: {fileID: 0}
     - target: {fileID: 128637990868299170, guid: 43cf059f82ce7a443a9c5d9f47caa067,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7644375426369102649, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904437851784586048, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193189186728966468, guid: 43cf059f82ce7a443a9c5d9f47caa067,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43cf059f82ce7a443a9c5d9f47caa067, type: 3}

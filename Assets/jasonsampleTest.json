@@ -1,0 +1,19 @@
+[
+{
+   "firstName": "Duke",
+   "lastName": "Java",
+   "age": 18,
+   "streetAddress": "100 Internet Dr",
+   "city": "JavaTown",
+   "state": "JA",
+   "postalCode": "12345"
+},
+  
+{  "firstName": "marlin"
+   "lastName": "Java",
+   "age": 18,
+   "streetAddress": "100 Internet Dr",
+   "city": "JavaTown",
+   "state": "JA",
+   "postalCode": "12345"
+}

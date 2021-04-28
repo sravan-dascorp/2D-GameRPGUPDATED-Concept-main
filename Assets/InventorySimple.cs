@@ -21,8 +21,11 @@ public class InventorySimple : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        goldvalue_text.text = gold.ToString();
-        if (items.Count != 0) item_recieved.text = "you recieved" + items[items.Count - 1];
-        if (items.Count == 0) item_recieved.text = "you recieved nothing";
+        if( goldvalue_text !=null)goldvalue_text.text = "you got  "+ gold.ToString() + " gold";
+        if (item_recieved != null)
+        {
+            if (items.Count != 0) item_recieved.text = "you recieved" + items[items.Count - 1];
+            if (items.Count == 0) item_recieved.text = "you recieved nothing";
+        }
     }
 }
